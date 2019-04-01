@@ -1,0 +1,84 @@
+@font-face {
+  font-family: 'Adobe Clean';
+  src: url('http://or1010051248181.corp.adobe.com:3001/fonts/AdobeClean-Regular.otf');
+ }
+
+ @font-face {
+  font-family: 'Adobe Clean Light';
+  src: url('http://or1010051248181.corp.adobe.com:3001/fonts/AdobeClean-Light.otf');
+ }
+
+body{
+  /* margin:0px;
+  width:100vw;
+  height: auto;
+  position: relative;
+  display: block;
+  background: url("/baseimage.png");
+  background-repeat: repeat-x;
+  padding:0px;
+  z-index: -1;
+  opacity: 0.3; */
+}
+
+.bgDiv {
+  height: 100vh;
+  width:100%;
+  position:fixed;
+  top:0px;
+  left:0px;
+  opacity: 0.3;
+  z-index: -1;
+
+}
+
+.logopic{
+  display:block;
+
+}
+.logopic::after{
+  content:"";
+  clear: both;
+}
+
+.logopic .right{
+  width:10%;
+  height:auto;
+  position: absolute;
+  top:4%;
+  right:7%;
+}
+.logopic .left{
+  width:3%;
+  height:auto;
+  position: absolute;
+  left:5%;
+}
+
+.content p{
+  display:block;
+}
+
+p{
+  color:rgb(36, 36, 36);
+  font-family: 'Adobe Clean light';
+}
+
+.feature img{
+  height:4rem;
+  width:auto;
+}
+
+.feature{
+  /* height:40vh; */
+}
+
+.customJumbo{
+  margin-top:9%;
+  padding:2% !important;
+  background-color: #776388 !important;
+}
+
+.customJumbo h1{
+  color : white;
+}

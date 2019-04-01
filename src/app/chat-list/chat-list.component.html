@@ -1,0 +1,22 @@
+
+<!-- <button (click)="api()"> survey 1</button> -->
+
+<!-- <p class="surveyheader">Pending Survey's</p>
+<hr> -->
+
+<div *ngIf="chatList.length>0" >
+<div *ngFor="let chatitem of chatList" class="chat_list"   [ngClass] ="{'newchat': chatitem._id == chat?._id}" (click)="api(chatitem._id)">
+  <div class="chat_people">
+    <div class="chat_img"> <img src="https://img.icons8.com/cotton/2x/online-support.png" alt="BOT"> </div>
+    <div class="chat_ib">
+      <p> {{chatitem.surveyName}}  </p> <img src="http://or1010051248181.corp.adobe.com:3001/bell.svg"   *ngIf = "chatitem.conversationStatus == 0" >
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- [ngClass]="{'newchat' : chat.conversationStatus == 0}" -->
+
+<!-- <i *ngIf = "chatitem.conversationStatus == 0" class="fas fa-circle"></i> -->
+
+<!-- <img src="http://localhost:3000/bell.svg"   *ngIf = "chatitem.conversationStatus == 0" > -->

@@ -1,0 +1,122 @@
+
+
+#displayname{
+    font-family: 'Adobe Clean Light';
+    /* font-family: 'Open Sans', sans-serif; */
+    color:rgb(71, 71, 71);
+    letter-spacing: 1.2px;
+    font-size:1.2em;
+    padding-left:2%;
+    font-weight: bold;
+}
+
+.sendbar{
+    background-color: rgb(255,255,255);
+    height: 40px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    bottom:0px;
+    left:380px;
+    overflow-x: hidden;
+    overflow-y:scroll;
+}
+
+.sendbutton{
+    color:#55D48B;
+    font-size:25px;
+    line-height:40px;
+   position:relative;
+   left:940px;
+}
+
+.chatcontainer{
+    margin-top:1rem;
+    width:100%;
+    height:60px;
+    padding-left:10px;
+
+}
+
+
+.msg::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.msg img {
+    width:60px;
+    height:auto;
+    border-radius:200px;
+}
+
+
+.user {
+    width:100%;
+}
+
+.user img, .user p{
+    float:left;
+}
+
+.bot img, .bot p, .bot button{
+    float:right;
+}
+
+.bot button{
+  margin-left:1%;
+}
+
+.maincontainer{
+    width:100%;
+}
+
+.user p {
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: 'Adobe Clean Light';
+    font-size:1em;
+    background-color: #54D38A;
+    color: #fff;
+    margin-right:10px;
+    padding:10px;
+    border-radius:20px;
+    -webkit-box-shadow: -2px 2px 58px -14px rgba(36,36,36,0.75);
+    -moz-box-shadow: -2px 2px 58px -14px rgba(36,36,36,0.75);
+    box-shadow: -2px 2px 58px -14px rgba(36,36,36,0.75);
+    max-width : 80%;
+}
+
+.bot p {
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: 'Adobe Clean Light';
+    font-size:1em;
+    color: #252525;
+    background-color: #fff;
+    margin-left:10px;
+    padding:10px;
+    border-radius:20px;
+    -webkit-box-shadow: -2px 2px 58px -14px rgba(36,36,36,0.75);
+    -moz-box-shadow: -2px 2px 58px -14px rgba(36,36,36,0.75);
+    box-shadow: -2px 2px 58px -14px rgba(36,36,36,0.75);
+    max-width : 80%;
+}
+
+.sendbar{
+    background-color: rgb(255,255,255);
+    height: 40px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    bottom:0px;
+
+    overflow-x: hidden;
+    overflow-y:hidden;
+}
+
+.time{
+  text-align: right;
+  font-size:0.7em;
+  float: right;
+  padding-right: 2%;
+  color : #e74c3c;
+}

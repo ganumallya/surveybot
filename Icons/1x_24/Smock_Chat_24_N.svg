@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" height="24" id="S_Chat_24_N" viewBox="0 0 24 24" width="24">
+  <defs>
+    <style>
+      .fill {
+        fill: #707070;
+      }
+
+      
+    </style>
+  </defs>
+  <rect id="Canvas" fill="#ff13dc" opacity="0" width="24" height="24" /><path class="fill" d="M2.25,10h10.5a.25.25,0,0,1,.25.25v6.5a.25.25,0,0,1-.25.25H7.844a1,1,0,0,0-.71.3L4.8,19.8V17.5a.5.5,0,0,0-.5-.5H2.25A.25.25,0,0,1,2,16.75v-6.5A.25.25,0,0,1,2.25,10ZM0,10v7a2,2,0,0,0,2,2H3v4.4a.25.25,0,0,0,.252.251.246.246,0,0,0,.175-.074L8,19h5a2,2,0,0,0,2-2V10a2,2,0,0,0-2-2H2A2,2,0,0,0,0,10Z" transform="translate(0)" />
+  <path class="fill" d="M14,6H9V4a2,2,0,0,1,2-2H22a2,2,0,0,1,2,2v7a2,2,0,0,1-2,2H21v3.4a.25.25,0,0,1-.427.177L17,13V9A3,3,0,0,0,14,6Z" transform="translate(0)" />
+  </svg>

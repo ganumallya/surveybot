@@ -1,0 +1,40 @@
+.profile-pic img{
+  margin-top:0.0em;
+  width:70%;
+  border-radius:200px;
+  margin-left: auto;
+	margin-right: auto;
+  display: block;
+  margin-bottom:3rem;
+}
+
+.displayname{
+  text-align: center;
+  color:white;
+  font-family: 'Open Sans', sans-serif;
+  font-size:0.7em;
+  margin-bottom:5rem;
+}
+
+
+.icon{
+  width:50%;
+  margin-left: auto;
+	margin-right: auto;
+  display: block;
+  margin-top:2em;
+
+
+}
+
+.active{
+  padding-left:8px;
+  border-left: 3px solid #2ecc71;
+}
+
+.icon:hover{
+  cursor: pointer;
+}
+.icon:active{
+  width:60px;
+}

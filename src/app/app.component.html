@@ -1,0 +1,28 @@
+<html>
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+    crossorigin="anonymous">
+</head>
+
+<body>
+  <app-chat-menu class="chatmenu"> </app-chat-menu>
+  <app-chat-list class="chatlist"> </app-chat-list>
+  <app-chat-ui class="chatui" #scrollMe> </app-chat-ui>
+  <div *ngIf="chat">
+
+
+  <form *ngIf="chat?.conversationStatus !== -1" class="sendbar" (submit) = "onNewMessage(postF)" #postF="ngForm">
+    <input id="chatinput" name="newmsg" type="text" [disabled]="chat?.conversationStatus==-1 ?  'disabled' : null" [ngClass]="{'inputDisabled': chat?.conversationStatus==-1}"
+    [(ngModel)]="chatMessage"   placeholder="Type something to send" autocomplete="off">
+    <button id="sendbutton" type="submit"> <img src="http://or1010051248181.corp.adobe.com:3001/right-arrow.svg"></button>
+  </form>
+
+  <div class="sendbar end" *ngIf="chat?.conversationStatus < 0">
+    <p class="endsurvey">This survey has ended</p>
+  </div>
+</div>
+</body>
+
+</html>

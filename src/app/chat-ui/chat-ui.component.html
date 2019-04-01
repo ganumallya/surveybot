@@ -1,0 +1,37 @@
+<p *ngIf="chat !== undefined" id="displayname"> {{chat.surveyName}}  <span class="time"> Time remaining {{timeDisplay}}</span>  </p>
+<hr *ngIf="conversation.length > 0">
+
+
+    <div class="chatcontainer">
+    <p *ngIf="conversation.length <= 0">
+
+    </p>
+
+    <div *ngFor="let conv of conversation">
+
+
+            <div *ngIf="conv.from == 'user'" class="user msg">
+                <img src="https://s7d2.scene7.com/is/image/IMGDIR/{{chat.ldap}}?$100x$">
+                <p>{{conv.message}}</p>
+            </div>
+
+            <div *ngIf="conv.from == 'bot'" class="bot msg">
+                <img src="https://img.icons8.com/cotton/2x/online-support.png">
+                <p>{{conv.message}}</p>
+            </div>
+
+            <div  class="bot msg">
+              <img src="https://img.icons8.com/cotton/2x/online-support.png">
+              <div *ngFor="let buttonItem of buttonList">
+                <button mat-raised-button (click) = "testfunc(buttonItem)">{{buttonItem}}</button>
+              </div>
+              <!-- <button (click) = "testfunc(b)" mat-raised-button #b="yes">Yes</button>
+              <button mat-raised-button>No</button>
+              <button mat-raised-button>Busy</button>
+              <button mat-raised-button>Clarify</button> -->
+          </div>
+
+
+    </div>
+
+</div>
